@@ -68,6 +68,10 @@ const CategoryStyled = styled.section`
   height: auto;
   width: 100%;
   padding: 68px 94px;
+
+  @media (max-width: 768px) {
+    padding: 30px 20px;
+  }
 `;
 
 const Container = styled.div`
@@ -105,6 +109,21 @@ const Container = styled.div`
     gap: 16px;
     width: 100%;
     height: auto;
+  }
+
+  @media (max-width: 768px) {
+    .articles {
+      flex-direction: column;
+      padding: 10px;
+    }
+
+    .title {
+      justify-content: center;
+      p {
+        text-align: center;
+        font-size: 12px;
+      }
+    }
   }
 `;
 

@@ -54,6 +54,7 @@ const SubscribeStyle = styled.div`
       font-size: 36px;
       font-weight: 700;
       margin: 0;
+      text-align: center;
     }
 
     p {
@@ -63,6 +64,14 @@ const SubscribeStyle = styled.div`
       font-weight: 400;
       margin: 0;
     }
+  }
+
+  @media (max-width: 768px) {
+    .subscribe {
+      width: 100%;
+    }
+
+
   }
 `;
 

@@ -25,6 +25,19 @@ const StyledBtnForm = styled.div`
     align-items: center;
     border: none;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    
+
+    button {
+      width: 100%;
+    }
+
+    input {
+      width: 100%;
+    }
+  }
 `;
 
 export default BtnForm;

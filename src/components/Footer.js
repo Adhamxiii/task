@@ -119,6 +119,23 @@ const FooterStyled = styled.div`
       background: #c0c0c0;
     }
   }
+
+  @media (max-width: 1024px) {
+    .container {
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    .footer-link {
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    .copyright {
+      text-align: center;
+    }
+    
+  }
 `;
 
 export default Footer;

@@ -30,7 +30,7 @@ const Category = () => {
               </span>
             </p>
           </div>
-      <div className="title">
+          <div className="title">
             <p>
               See All Category{" "}
               <span>
@@ -69,6 +69,10 @@ const CategoryStyled = styled.section`
   height: auto;
   width: 100%;
   padding: 68px 94px;
+
+  @media (max-width: 768px) {
+    padding: 30px 20px;
+  }
 `;
 
 const Container = styled.div`
@@ -105,6 +109,19 @@ const Container = styled.div`
     align-items: flex-start;
     width: 100%;
     gap: 37px;
+  }
+
+  @media (max-width: 768px) {
+    .categories {
+      flex-direction: column;
+    }
+    .title {
+      justify-content: center;
+      p {
+        text-align: center;
+        font-size: 12px;
+      }
+    }
   }
 `;
 

@@ -44,6 +44,10 @@ const CardStyled = styled.div`
       font-weight: 700;
     }
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export default SingleArticle;

@@ -36,6 +36,10 @@ const CardStyled = styled.div`
       line-height: 1.75rem;
     }
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export default Card;

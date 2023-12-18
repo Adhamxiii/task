@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <StyledNavbar>
       <Logo />
-      <Navlink />
+      {/* <Navlink /> */}
     </StyledNavbar>
   );
 };
