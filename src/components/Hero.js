@@ -94,6 +94,32 @@ const StyledHero = styled.main`
       }
     }
   }
+
+  @media (max-width: 768px) {
+    .image {
+      display: none;
+    }
+
+    .container {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .container {
+      padding: 0 15px;
+    }
+
+    .content {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
 `;
 
 export default Hero;

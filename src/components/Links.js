@@ -6,25 +6,26 @@ import { links } from "../data";
 const Links = () => {
   return (
     <StyledNavLinks>
-      <ul>
-        {links.map(({ id, text, path }) => {
-          return (
+      <div>
+        <ul>
+          {links.map(({ id, text, path }) => (
             <li key={id}>
               {text === "search" ? (
                 <a href={path}>
-                  <FaMagnifyingGlass />
+                  <FaMagnifyingGlass /> {text}
                 </a>
-              ) : null}
-              <a href={path}>{text}</a>
+              ) : (
+                <a href={path}>{text}</a>
+              )}
             </li>
-          );
-        })}
-      </ul>
+          ))}
+        </ul>
+      </div>
     </StyledNavLinks>
   );
 };
 
-const StyledNavLinks = styled(Links)`
+const StyledNavLinks = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,16 +39,23 @@ const StyledNavLinks = styled(Links)`
     gap: 3rem;
   }
 
-  li {
+  li, a {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-    color: var(--primaryColor);
+    font-size: 20px;
+    color: #2b2c34;
     cursor: pointer;
+    font-weight: 700;
+    text-transform: capitalize;
   }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+    
+  
 `;
 
 export default Links;

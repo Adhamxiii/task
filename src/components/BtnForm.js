@@ -28,7 +28,8 @@ const StyledBtnForm = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    
+    width: 100%;
+
 
     button {
       width: 100%;
@@ -38,6 +39,8 @@ const StyledBtnForm = styled.div`
       width: 100%;
     }
   }
+
+  
 `;
 
 export default BtnForm;

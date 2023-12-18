@@ -7,14 +7,14 @@ const Navbar = () => {
   return (
     <StyledNavbar>
       <Logo />
-      {/* <Navlink /> */}
+      <Navlink />
     </StyledNavbar>
   );
 };
 
 const StyledNavbar = styled.nav`
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   align-items: center;
   padding: 1.5rem 2rem;
   height: var(--navHeight);

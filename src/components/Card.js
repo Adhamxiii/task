@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Card = ({ img, title, isChoosed }) => {
   return (
-<CardStyled isChoosed={isChoosed}>
+    <CardStyled isChoosed={isChoosed}>
       <div className="container">
         <img src={img} alt={title} />
         <p>{title}</p>
@@ -39,6 +39,10 @@ const CardStyled = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
+
+    .container {
+      align-items: center;
+    }
   }
 `;
 
