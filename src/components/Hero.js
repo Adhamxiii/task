@@ -33,13 +33,11 @@ const StyledHero = styled.main`
   height: 100vh;
   background: url(${bg});
 
-  
-
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5rem 0;
+    padding: 5rem 1rem;
     width: 70%;
   }
 
@@ -92,12 +90,12 @@ const StyledHero = styled.main`
       justify-content: center;
       align-items: center;
       img {
-        width: 100%;
+        width: 470px;
       }
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 972px) {
     .image {
       display: none;
     }
@@ -107,7 +105,23 @@ const StyledHero = styled.main`
     }
   }
 
-  @media (max-width: 320px) {
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 15px;
+    }
+
+    .content {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  @media (max-width: 425px) {
     .container {
       padding: 0 15px;
     }

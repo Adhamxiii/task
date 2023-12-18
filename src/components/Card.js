@@ -26,7 +26,7 @@ const CardStyled = styled.div`
   .container {
     display: inline-flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 30px;
 
     p {

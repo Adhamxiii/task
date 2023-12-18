@@ -18,7 +18,9 @@ const StyledNavbar = styled.nav`
   align-items: center;
   padding: 1.5rem 2rem;
   height: var(--navHeight);
-
+  @media (max-width:972px) {
+    flex-direction: column;
+  }
   
 `;
 

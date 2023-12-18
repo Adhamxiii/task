@@ -17,6 +17,8 @@ const StyledNavlink = styled.div`
   justify-content: center;
   align-items: center;
   gap: 50px;
+  @media (max-width:972px) {
+    flex-direction: column;
+  }
 `;
-
 export default Navlink;

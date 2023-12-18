@@ -106,7 +106,9 @@ const Container = styled.div`
 
   .categories {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
     gap: 37px;
   }

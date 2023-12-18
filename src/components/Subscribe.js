@@ -22,7 +22,7 @@ const Subscribe = () => {
 
 const SubscribeStyle = styled.div`
   display: flex;
-  padding: 58px 0;
+  padding: 58px 15px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
