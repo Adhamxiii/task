@@ -120,7 +120,7 @@ const FooterStyled = styled.div`
     }
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     .container {
       flex-direction: column;
       gap: 50px;
@@ -134,7 +134,12 @@ const FooterStyled = styled.div`
     .copyright {
       text-align: center;
     }
-    
+  }
+
+  @media (max-width: 425px) {
+    .social-links {
+      justify-content: center;
+    }
   }
 `;
 

@@ -33,6 +33,8 @@ const StyledHero = styled.main`
   height: 100vh;
   background: url(${bg});
 
+  
+
   .container {
     display: flex;
     justify-content: center;

@@ -71,7 +71,15 @@ const SubscribeStyle = styled.div`
       width: 100%;
     }
 
+    .text {
+      h3 {
+        font-size: 20px;
+      }
 
+      p {
+        font-size: 14px;
+      }
+    }
   }
 `;
 
