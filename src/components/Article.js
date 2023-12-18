@@ -105,6 +105,8 @@ const Container = styled.div`
 
   .articles {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: flex-start;
     gap: 16px;
     width: 100%;

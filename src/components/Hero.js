@@ -136,6 +136,16 @@ const StyledHero = styled.main`
       }
     }
   }
+
+  @media (max-width: 1053px) {
+    .image {
+      display: none;
+    }
+
+    .container {
+      width: 100%;
+    }
+  }
 `;
 
 export default Hero;

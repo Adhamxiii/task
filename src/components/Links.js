@@ -36,10 +36,11 @@ const StyledNavLinks = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
   }
 
-  li, a {
+  li,
+  a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,8 +55,6 @@ const StyledNavLinks = styled.div`
   @media (max-width: 768px) {
     display: none;
   }
-    
-  
 `;
 
 export default Links;

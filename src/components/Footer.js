@@ -64,7 +64,7 @@ const Footer = () => {
 const FooterStyled = styled.div`
   width: 100%;
   height: auto;
-  padding: 70px 95px 25px;
+  padding: 70px 48px 25px;
   background: #e4e5e9;
 
   .container {
@@ -88,8 +88,9 @@ const FooterStyled = styled.div`
 
   .footer-link {
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
-    gap: 95px;
+    gap: 48px;
   }
 
   h3 {
@@ -117,6 +118,13 @@ const FooterStyled = styled.div`
       width: 100%;
       height: 1px;
       background: #c0c0c0;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .container {
+      flex-direction: column;
+      gap: 50px;
     }
   }
 
